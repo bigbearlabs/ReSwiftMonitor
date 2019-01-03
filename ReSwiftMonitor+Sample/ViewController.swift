@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mainasuButtonTapped(_ sender: UIButton) {
-        store.dispatch(CounterAction.Decrease())
+      store.dispatch(CounterActionEnum.decrease(val: 1))
     }
     
     @IBAction func plusButtonTapped(_ sender: UIButton) {
@@ -42,4 +42,8 @@ extension ViewController: StoreSubscriber {
     func newState(state: AppState) {
         numberLabel.text = state.counter.description
     }
+}
+
+enum CounterActionEnum: Action {
+  case decrease(val: Int)
 }
