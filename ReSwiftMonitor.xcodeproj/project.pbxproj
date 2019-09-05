@@ -27,6 +27,7 @@
 		177D8EE72100A748004DE2C0 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 177D8ED92100A53D004DE2C0 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		177D8EE92100A756004DE2C0 /* ReSwiftMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1777819320228E41006D5E0A /* ReSwiftMonitor.framework */; };
 		177D8EEA2100A756004DE2C0 /* ReSwiftMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1777819320228E41006D5E0A /* ReSwiftMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		177D8EED2100A80B004DE2C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 177D8EEC2100A80B004DE2C0 /* Default-568h@2x.png */; };
 		177D8EEF21014B17004DE2C0 /* ScClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EEE21014B17004DE2C0 /* ScClient.swift */; };
 		177D8EFC21014B4D004DE2C0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF121014B4C004DE2C0 /* Event.swift */; };
 		177D8EFD21014B4D004DE2C0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF321014B4C004DE2C0 /* Parser.swift */; };
@@ -37,6 +38,21 @@
 		177D8F0221014B4D004DE2C0 /* Miscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF921014B4D004DE2C0 /* Miscellaneous.swift */; };
 		177D8F0321014B4D004DE2C0 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EFB21014B4D004DE2C0 /* Listener.swift */; };
 		17B5D26E22D0D9CF000401CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5D26D22D0D9CF000401CE /* LaunchScreen.storyboard */; };
+		511F75912164F04F0084157E /* ReSwiftMonitorMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 511F758F2164F04F0084157E /* ReSwiftMonitorMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		511F75952164F06F0084157E /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EFB21014B4D004DE2C0 /* Listener.swift */; };
+		511F75962164F06F0084157E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF121014B4C004DE2C0 /* Event.swift */; };
+		511F75972164F06F0084157E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF321014B4C004DE2C0 /* Parser.swift */; };
+		511F75982164F06F0084157E /* AtomicInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF521014B4D004DE2C0 /* AtomicInteger.swift */; };
+		511F75992164F06F0084157E /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF621014B4D004DE2C0 /* JsonSerializer.swift */; };
+		511F759A2164F06F0084157E /* ClientUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF721014B4D004DE2C0 /* ClientUtils.swift */; };
+		511F759B2164F06F0084157E /* JSONStringify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF821014B4D004DE2C0 /* JSONStringify.swift */; };
+		511F759C2164F06F0084157E /* Miscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EF921014B4D004DE2C0 /* Miscellaneous.swift */; };
+		511F759D2164F06F0084157E /* MonitorMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777819B20228E9B006D5E0A /* MonitorMiddleware.swift */; };
+		511F759E2164F06F0084157E /* ScClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D8EEE21014B17004DE2C0 /* ScClient.swift */; };
+		511F759F2164F06F0084157E /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177781A42023613A006D5E0A /* Serialization.swift */; };
+		51EA1C932164F9E200695B74 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EA1C902164F9E200695B74 /* HandyJSON.framework */; };
+		51EA1C942164F9E200695B74 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EA1C912164F9E200695B74 /* Starscream.framework */; };
+		51EA1C952164F9E200695B74 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EA1C922164F9E200695B74 /* ReSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +109,12 @@
 		177D8EF921014B4D004DE2C0 /* Miscellaneous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miscellaneous.swift; sourceTree = "<group>"; };
 		177D8EFB21014B4D004DE2C0 /* Listener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
 		17B5D26D22D0D9CF000401CE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		511F758D2164F04E0084157E /* ReSwiftMonitorMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReSwiftMonitorMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511F758F2164F04F0084157E /* ReSwiftMonitorMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReSwiftMonitorMac.h; sourceTree = "<group>"; };
+		511F75902164F04F0084157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51EA1C902164F9E200695B74 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HandyJSON.framework; path = Carthage/Build/Mac/HandyJSON.framework; sourceTree = "<group>"; };
+		51EA1C912164F9E200695B74 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
+		51EA1C922164F9E200695B74 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/Mac/ReSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +139,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		511F758A2164F04E0084157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EA1C932164F9E200695B74 /* HandyJSON.framework in Frameworks */,
+				51EA1C942164F9E200695B74 /* Starscream.framework in Frameworks */,
+				51EA1C952164F9E200695B74 /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,6 +157,7 @@
 			children = (
 				1777819420228E41006D5E0A /* Sources */,
 				177781B020236A5F006D5E0A /* ReSwiftMonitor+Sample */,
+				511F758E2164F04F0084157E /* ReSwiftMonitorMac */,
 				1777810620228B1C006D5E0A /* Products */,
 				6380827EEB58ED91EBC2806D /* Frameworks */,
 			);
@@ -135,6 +168,7 @@
 			children = (
 				1777819320228E41006D5E0A /* ReSwiftMonitor.framework */,
 				177781AF20236A5F006D5E0A /* ReSwiftMonitor+Sample.app */,
+				511F758D2164F04E0084157E /* ReSwiftMonitorMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +240,21 @@
 			path = Emitter;
 			sourceTree = "<group>";
 		};
+		511F758E2164F04F0084157E /* ReSwiftMonitorMac */ = {
+			isa = PBXGroup;
+			children = (
+				511F758F2164F04F0084157E /* ReSwiftMonitorMac.h */,
+				511F75902164F04F0084157E /* Info.plist */,
+			);
+			path = ReSwiftMonitorMac;
+			sourceTree = "<group>";
+		};
 		6380827EEB58ED91EBC2806D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51EA1C902164F9E200695B74 /* HandyJSON.framework */,
+				51EA1C922164F9E200695B74 /* ReSwift.framework */,
+				51EA1C912164F9E200695B74 /* Starscream.framework */,
 				177D8ED82100A53D004DE2C0 /* HandyJSON.framework */,
 				177D8ED72100A53C004DE2C0 /* ReSwift.framework */,
 				177D8ED92100A53D004DE2C0 /* Starscream.framework */,
@@ -224,6 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1777819720228E41006D5E0A /* ReSwiftMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511F75882164F04E0084157E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511F75912164F04F0084157E /* ReSwiftMonitorMac.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +321,24 @@
 			productReference = 177781AF20236A5F006D5E0A /* ReSwiftMonitor+Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		511F758C2164F04E0084157E /* ReSwiftMonitorMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 511F75942164F04F0084157E /* Build configuration list for PBXNativeTarget "ReSwiftMonitorMac" */;
+			buildPhases = (
+				511F75882164F04E0084157E /* Headers */,
+				511F75892164F04E0084157E /* Sources */,
+				511F758A2164F04E0084157E /* Frameworks */,
+				511F758B2164F04E0084157E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSwiftMonitorMac;
+			productName = ReSwiftMonitorMac;
+			productReference = 511F758D2164F04E0084157E /* ReSwiftMonitorMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,6 +359,10 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
+					511F758C2164F04E0084157E = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1777810020228B1C006D5E0A /* Build configuration list for PBXProject "ReSwiftMonitor" */;
@@ -304,6 +380,7 @@
 			targets = (
 				1777819220228E41006D5E0A /* ReSwiftMonitor */,
 				177781AE20236A5F006D5E0A /* ReSwiftMonitor+Sample */,
+				511F758C2164F04E0084157E /* ReSwiftMonitorMac */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +400,13 @@
 				17B5D26E22D0D9CF000401CE /* LaunchScreen.storyboard in Resources */,
 				177781B920236A5F006D5E0A /* Assets.xcassets in Resources */,
 				177781B720236A5F006D5E0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511F758B2164F04E0084157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +439,24 @@
 				177781C620236B92006D5E0A /* AppState.swift in Sources */,
 				177781B420236A5F006D5E0A /* ViewController.swift in Sources */,
 				177781B220236A5F006D5E0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511F75892164F04E0084157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511F75952164F06F0084157E /* Listener.swift in Sources */,
+				511F75962164F06F0084157E /* Event.swift in Sources */,
+				511F75972164F06F0084157E /* Parser.swift in Sources */,
+				511F75982164F06F0084157E /* AtomicInteger.swift in Sources */,
+				511F75992164F06F0084157E /* JsonSerializer.swift in Sources */,
+				511F759A2164F06F0084157E /* ClientUtils.swift in Sources */,
+				511F759B2164F06F0084157E /* JSONStringify.swift in Sources */,
+				511F759C2164F06F0084157E /* Miscellaneous.swift in Sources */,
+				511F759D2164F06F0084157E /* MonitorMiddleware.swift in Sources */,
+				511F759E2164F06F0084157E /* ScClient.swift in Sources */,
+				511F759F2164F06F0084157E /* Serialization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +700,73 @@
 			};
 			name = Release;
 		};
+		511F75922164F04F0084157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ReSwiftMonitorMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.ReSwiftMonitorMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		511F75932164F04F0084157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ReSwiftMonitorMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.ReSwiftMonitorMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,6 +793,15 @@
 			buildConfigurations = (
 				177781BE20236A5F006D5E0A /* Debug */,
 				177781BF20236A5F006D5E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		511F75942164F04F0084157E /* Build configuration list for PBXNativeTarget "ReSwiftMonitorMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511F75922164F04F0084157E /* Debug */,
+				511F75932164F04F0084157E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
