@@ -16,10 +16,10 @@ public class ScClient: Listener {
     var onAuthentication: ((ScClient, Bool?) -> Void)?
     
     // MARK: - init
-    public init(url: String, authToken: String? = nil) {
+    public init(url: URL, authToken: String? = nil) {
         self.counter = AtomicInteger()
         self.authToken = authToken
-        self.socket = WebSocket(url: URL(string: url)!)
+        self.socket = WebSocket(url: url)
         super.init()
         socket.delegate = self
     }
@@ -172,8 +172,8 @@ extension ScClient: WebSocketDelegate {
     }
     
     public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
-        if (text == "#1") {
-            socket.write(string: "#2")
+        if (text == "") {
+            socket.write(string: "")
         } else {
             if let messageObject = JSONConverter.deserializeString(message: text) {
                 if let (data, rid, cid, eventName, error) = Parser.getMessageDetails(myMessage: messageObject) {

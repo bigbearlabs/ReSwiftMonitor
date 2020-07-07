@@ -44,18 +44,23 @@ public struct MonitorMiddleware {
         queue.maxConcurrentOperationCount = 1
         queue.qualityOfService = .default
         queue.isSuspended = true
-        
+
         return { dispatch, fetchState in
             guard let url = configuration.url else {
-                fatalError("不正なURL")
+                fatalError("invalid url")
             }
-            let client = ScClient(url: url.absoluteString)
+            let client = ScClient(url: url)
             client.connect()
             return { next in
                 return { action in
+                    if !client.socket.isConnected {
+                        client.connect()
+                        return next(action)
+                    }
                     next(action)
                     queue.isSuspended = !client.socket.isConnected
                     queue.addOperation(SendActionInfoOperation(state: fetchState()!, action: action, client: client))
+
                 }
             }
         }
